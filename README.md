@@ -1,4 +1,4 @@
-# <img src="https://i.ibb.co/6yvk6Yp/119942508-10164046298580501-6747497232543057554-n.jpg" width="100px" align="center" alt=""> | Ateneo de Davao University Business Management |
+## <img src="https://i.ibb.co/6yvk6Yp/119942508-10164046298580501-6747497232543057554-n.jpg" width="100px" align="center" alt=""> | Ateneo de Davao University Business Management |
 ## Built With
 [![Firebase][Firebase-logo]][Firebase-url] [![Express][Express-logo]][Express-url] [![React][React-logo]][React-url] [![Node][Node-logo]][Node-url]
 ## Attendance Monitoring System
