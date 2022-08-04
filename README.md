@@ -4,7 +4,7 @@
 ## Attendance Monitoring System
 A system enabling users such as the department admin, faculty staff, and students observe clean interface of attendance.
 System built with specific user-abilties limited to itself prevent override data breaches.
-## Possible Sub-Systems
+## Sub-Systems
 1. Account
 2. CRUD System
 3. Management
