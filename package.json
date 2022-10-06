@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "dayjs": "^1.11.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "weather-js": "^2.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "pa5",
+  "description": "[![Firebase][Firebase-logo]][Firebase-url] [![Express][Express-logo]][Express-url] [![React][React-logo]][React-url] [![Node][Node-logo]][Node-url]\r ## Attendance Monitoring System\r A system enabling users such as the department admin, faculty staff, and students observe clean interface of attendance.\r System built with specific user-abilties limited to itself prevent override data breaches.\r ## Sub-Systems\r 1. Account\r 2. CRUD System\r 3. Management",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC"
+}

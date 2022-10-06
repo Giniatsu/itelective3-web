@@ -1,0 +1,14 @@
+<div style="display:inline-block;vertical-align:top;">
+        <a href="https://imgbb.com/">
+            <img src="https://i.ibb.co/W67xwpp/flag-for-flag-philippines-pngrepo-com.png" class="mr-3 h-16 w-20" alt="flag-for-flag-philippines-pngrepo-com" style="border: 0;">
+        </a>
+    </div>
+    <div style="display:inline-block;">
+        <p style="font-family: sans-serif;font-weight: bold;font-size: x-large;">
+            <%= panahon[0]['location']['name']%>
+        </p>
+        <p style="font-family: sans-serif;font-size: medium;"> 
+            <%= panahon[0]['location']['lat']%>° N,
+            <%= panahon[0]['location']['long']%>° E
+        </p>
+    </div>
