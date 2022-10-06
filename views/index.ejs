@@ -25,12 +25,16 @@
             <table class="text-center" style="margin-left: auto; margin-right: auto">
                 <tr>
                     <td class="px-6"><% var x; %> 
-                        <% if(x || panahon[0]['current'].skytext == 'Rain Showers' || panahon[0]['current'].skytext == 'Rain'){ %> 
-                            <i class="fa-solid fa-cloud-showers-water" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
-                        <% } else if(x || panahon[0]['current'].skytext == 'Cloudy' || panahon[0]['current'].skytext == 'Mostly Cloudy'){ %> 
+                        <% if(x || panahon[0]['current'].skytext == 'Rain Showers'){ %> 
+                            <i class="fa-solid fa-cloud-showers" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['current'].skytext == 'Rain'){ %> 
+                            <i class="fa-solid fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['current'].skytext == 'Cloudy'){ %> 
                             <i class="fa-solid fa-cloud" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
-                        <% } else if(x ||panahon[0]['current'].skytext == 'Sunny' || panahon[0]['current'].skytext == 'Mostly Sunny'){ %> 
+                        <% } else if(x ||panahon[0]['current'].skytext == 'Sunny'){ %> 
                             <i class="fa-solid fa-sun" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['current'].skytext == 'Mostly Sunny'){ %> 
+                            <i class="fa-solid fa-sun-bright" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['current'].skytext == 'Heavy T-Storms'){ %> 
                             <i class="fa-solid fa-cloud-showers-heavy" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['current'].skytext == 'Partly Sunny'){ %> 
@@ -38,16 +42,26 @@
                         <% } else if(x || panahon[0]['current'].skytext == 'T-Storms'){ %> 
                             <i class="fa-solid fa-cloud-bolt" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['current'].skytext == 'Light Rain'){ %> 
-                            <i class="fa-solid fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                            <i class="fa-light fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['current'].skytext == 'Mostly Cloudy'){ %> 
+                            <i class="fa-solid fa-clouds" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['current'].skytext == 'Partly Cloudy'){ %> 
+                            <i class="fa-light fa-clouds" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['current'].skytext == 'Clear'){ %> 
+                            <i class="fa-thin fa-cloud-sun" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } %>
                         <%= x; %></td>
                     <td class="px-6"><% var x; %> 
-                        <% if(x || panahon[0]['forecast'][1].skytextday == 'Rain Showers' || panahon[0]['forecast'][1].skytextday == 'Rain'){ %> 
-                            <i class="fa-solid fa-cloud-showers-water" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
-                        <% } else if(x || panahon[0]['forecast'][1].skytextday == 'Cloudy' || panahon[0]['forecast'][1].skytextday == 'Mostly Cloudy'){ %> 
+                        <% if(x || panahon[0]['forecast'][1].skytextday == 'Rain Showers'){ %> 
+                            <i class="fa-solid fa-cloud-showers" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][1].skytextday == 'Rain'){ %> 
+                            <i class="fa-solid fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][1].skytextday == 'Cloudy'){ %> 
                             <i class="fa-solid fa-cloud" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
-                        <% } else if(x ||panahon[0]['forecast'][1].skytextday == 'Sunny' || panahon[0]['forecast'][1].skytextday == 'Mostly Sunny'){ %> 
+                        <% } else if(x ||panahon[0]['forecast'][1].skytextday == 'Sunny'){ %> 
                             <i class="fa-solid fa-sun" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][1].skytextday == 'Mostly Sunny'){ %> 
+                            <i class="fa-solid fa-sun-bright" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['forecast'][1].skytextday == 'Heavy T-Storms'){ %> 
                             <i class="fa-solid fa-cloud-showers-heavy" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['forecast'][1].skytextday == 'Partly Sunny'){ %> 
@@ -55,16 +69,26 @@
                         <% } else if(x || panahon[0]['forecast'][1].skytextday == 'T-Storms'){ %> 
                             <i class="fa-solid fa-cloud-bolt" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['forecast'][1].skytextday == 'Light Rain'){ %> 
-                            <i class="fa-solid fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                            <i class="fa-light fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][1].skytextday == 'Mostly Cloudy'){ %> 
+                            <i class="fa-solid fa-clouds" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][1].skytextday == 'Partly Cloudy'){ %> 
+                            <i class="fa-light fa-clouds" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][1].skytextday == 'Clear'){ %> 
+                            <i class="fa-thin fa-cloud-sun" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } %>
                         <%= x; %></td>
                     <td class="px-6"><% var x; %> 
-                        <% if(x || panahon[0]['forecast'][2].skytextday == 'Rain Showers' || panahon[0]['forecast'][2].skytextday == 'Rain'){ %> 
-                            <i class="fa-solid fa-cloud-showers-water" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
-                        <% } else if(x || panahon[0]['forecast'][2].skytextday == 'Cloudy' || panahon[0]['forecast'][2].skytextday == 'Mostly Cloudy'){ %> 
+                        <% if(x || panahon[0]['forecast'][2].skytextday == 'Rain Showers'){ %> 
+                            <i class="fa-solid fa-cloud-showers" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][2].skytextday == 'Rain'){ %> 
+                            <i class="fa-solid fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][2].skytextday == 'Cloudy'){ %> 
                             <i class="fa-solid fa-cloud" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
-                        <% } else if(x ||panahon[0]['forecast'][2].skytextday == 'Sunny' || panahon[0]['forecast'][2].skytextday == 'Mostly Sunny'){ %> 
+                        <% } else if(x ||panahon[0]['forecast'][2].skytextday == 'Sunny'){ %> 
                             <i class="fa-solid fa-sun" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][2].skytextday == 'Mostly Sunny'){ %> 
+                            <i class="fa-solid fa-sun-bright" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['forecast'][2].skytextday == 'Heavy T-Storms'){ %> 
                             <i class="fa-solid fa-cloud-showers-heavy" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['forecast'][2].skytextday == 'Partly Sunny'){ %> 
@@ -72,16 +96,26 @@
                         <% } else if(x || panahon[0]['forecast'][2].skytextday == 'T-Storms'){ %> 
                             <i class="fa-solid fa-cloud-bolt" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['forecast'][2].skytextday == 'Light Rain'){ %> 
-                            <i class="fa-solid fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                            <i class="fa-light fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][2].skytextday == 'Mostly Cloudy'){ %> 
+                            <i class="fa-solid fa-clouds" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][2].skytextday == 'Partly Cloudy'){ %> 
+                            <i class="fa-light fa-clouds" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][2].skytextday == 'Clear'){ %> 
+                            <i class="fa-thin fa-cloud-sun" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } %>
                         <%= x; %></td>
                     <td class="px-6"><% var x; %> 
-                        <% if(x || panahon[0]['forecast'][3].skytextday == 'Rain Showers' || panahon[0]['forecast'][3].skytextday == 'Rain'){ %> 
-                            <i class="fa-solid fa-cloud-showers-water" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
-                        <% } else if(x || panahon[0]['forecast'][3].skytextday == 'Cloudy' || panahon[0]['forecast'][3].skytextday == 'Mostly Cloudy'){ %> 
+                        <% if(x || panahon[0]['forecast'][3].skytextday == 'Rain Showers'){ %> 
+                            <i class="fa-solid fa-cloud-showers" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][3].skytextday == 'Rain'){ %> 
+                            <i class="fa-solid fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][3].skytextday == 'Cloudy'){ %> 
                             <i class="fa-solid fa-cloud" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
-                        <% } else if(x ||panahon[0]['forecast'][3].skytextday == 'Sunny' || panahon[0]['forecast'][3].skytextday == 'Mostly Sunny'){ %> 
+                        <% } else if(x ||panahon[0]['forecast'][3].skytextday == 'Sunny'){ %> 
                             <i class="fa-solid fa-sun" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][3].skytextday == 'Mostly Sunny'){ %> 
+                            <i class="fa-solid fa-sun-bright" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['forecast'][3].skytextday == 'Heavy T-Storms'){ %> 
                             <i class="fa-solid fa-cloud-showers-heavy" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['forecast'][3].skytextday == 'Partly Sunny'){ %> 
@@ -89,16 +123,26 @@
                         <% } else if(x || panahon[0]['forecast'][3].skytextday == 'T-Storms'){ %> 
                             <i class="fa-solid fa-cloud-bolt" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['forecast'][3].skytextday == 'Light Rain'){ %> 
-                            <i class="fa-solid fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                            <i class="fa-light fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][3].skytextday == 'Mostly Cloudy'){ %> 
+                            <i class="fa-solid fa-clouds" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][3].skytextday == 'Partly Cloudy'){ %> 
+                            <i class="fa-light fa-clouds" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][3].skytextday == 'Clear'){ %> 
+                            <i class="fa-thin fa-cloud-sun" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } %>
                         <%= x; %></td>
                     <td class="px-6"><% var x; %> 
-                        <% if(x || panahon[0]['forecast'][4].skytextday == 'Rain Showers' || panahon[0]['forecast'][4].skytextday == 'Rain'){ %> 
-                            <i class="fa-solid fa-cloud-showers-water" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
-                        <% } else if(x || panahon[0]['forecast'][4].skytextday == 'Cloudy' || panahon[0]['forecast'][4].skytextday == 'Mostly Cloudy'){ %> 
+                        <% if(x || panahon[0]['forecast'][4].skytextday == 'Rain Showers'){ %> 
+                            <i class="fa-solid fa-cloud-showers" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][4].skytextday == 'Rain'){ %> 
+                            <i class="fa-solid fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][4].skytextday == 'Cloudy'){ %> 
                             <i class="fa-solid fa-cloud" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
-                        <% } else if(x ||panahon[0]['forecast'][4].skytextday == 'Sunny' || panahon[0]['forecast'][4].skytextday == 'Mostly Sunny'){ %> 
+                        <% } else if(x ||panahon[0]['forecast'][4].skytextday == 'Sunny'){ %> 
                             <i class="fa-solid fa-sun" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][4].skytextday == 'Mostly Sunny'){ %> 
+                            <i class="fa-solid fa-sun-bright" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['forecast'][4].skytextday == 'Heavy T-Storms'){ %> 
                             <i class="fa-solid fa-cloud-showers-heavy" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['forecast'][4].skytextday == 'Partly Sunny'){ %> 
@@ -106,7 +150,13 @@
                         <% } else if(x || panahon[0]['forecast'][4].skytextday == 'T-Storms'){ %> 
                             <i class="fa-solid fa-cloud-bolt" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } else if(x || panahon[0]['forecast'][4].skytextday == 'Light Rain'){ %> 
-                            <i class="fa-solid fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                            <i class="fa-light fa-cloud-rain" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][4].skytextday == 'Mostly Cloudy'){ %> 
+                            <i class="fa-solid fa-clouds" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][4].skytextday == 'Partly Cloudy'){ %> 
+                            <i class="fa-light fa-clouds" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
+                        <% } else if(x || panahon[0]['forecast'][4].skytextday == 'Clear'){ %> 
+                            <i class="fa-thin fa-cloud-sun" style="font-size: 5em; color: rgb(115, 115, 255);"></i>
                         <% } %>
                         <%= x; %></td>
                 </tr>
