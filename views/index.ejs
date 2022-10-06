@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header') %>
+<body>
+    <img src="/Lucy_clean-min.png" alt="hellos">
+    <!-- ejs setup on html -->
+    <% let namepage="MOMMEH"; console.log(studentData); %>
+    <!-- end -->
+    <h3>Hello <%= studentData[0].fname; %></h3>
+    <% for(student of studentData){ %> 
+        <table> <%= student.fname; %> 
+            <%= student.age; %>
+            <%= student.course; %>
+        </table>
+    <% } %> 
+    <h4>Front End</h4>
+    <p>This is a paragraph</p>
+</body>
+</html>
